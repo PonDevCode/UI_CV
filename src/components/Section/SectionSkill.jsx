@@ -51,25 +51,26 @@ const SectionSkill = () => {
       </div>
       <div className='Box_Skill'>
         {
-          Skill.map((item)=>{
-            return(<div className='Box'>
-              <div className='Img_Box'>
-                <img src={icon} alt="" srcset="" />
-              </div>
-              <div className='Content_Box'>
-                <div className='Title_Box'>
-                  {item.name}
+          Skill.map((item, index) => {
+            return (
+              <div key={`item - ${index}`} className='Box'>
+                <div className='Img_Box'>
+                  <img src={icon} alt="" srcSet="" />
                 </div>
-                <div className='Description_Box'>
-                  {item.description}
+                <div className='Content_Box'>
+                  <div className='Title_Box'>
+                    {item.name}
+                  </div>
+                  <div className='Description_Box'>
+                    {item.description}
+                  </div>
                 </div>
-              </div>
-    
-            </div>)
+
+              </div>)
           })
-          
+
         }
-        
+
       </div>
 
     </div>

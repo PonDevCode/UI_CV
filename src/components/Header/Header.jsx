@@ -36,7 +36,8 @@ const Header = () => {
                                 <span>
                                     Không chỉ là một nhà thiết kế và nhà phát triển di động,
                                     mà còn là người tạo ra những trang web và ứng dụng di động đẹp,
-                                    trải nghiệm... tốt. Với sự kết hợp của nghệ thuật và kỹ thuật
+                                    trải nghiệm... tốt. Với sự kết hợp của nghệ thuật và kỹ thuật 
+                                    
                                 </span>
                             </div>
                         </div>

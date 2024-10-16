@@ -5,9 +5,9 @@
     border-radius: 24px;
     background: white;
     padding-top: 24px;
-    box-shadow: 1px 01px 90px #bebebe,
-        -11px -21px 10px #ffffff;
+    box-shadow: 0px 0px 67px #eae4e4, 0px 1px 0px #ffffff;
     margin-bottom: 24px;
+
     .Header_Box {
         width: 913px;
         height: 200px;
@@ -75,6 +75,12 @@
                     font-size: 16px;
                     font-weight: 400;
                     opacity: 0.7;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    word-break: break-word;
                 }
             }
 
@@ -83,13 +89,15 @@
                 display: flex;
                 justify-content: space-between;
                 font-size: 14px;
+
                 .Adress {
                     display: flex;
                     align-items: center;
                     gap: 5px;
                     opacity: 0.7;
                 }
-                .Adress_Router{
+
+                .Adress_Router {
                     display: flex;
                     align-items: center;
                     gap: 5px;
@@ -100,6 +108,7 @@
 
         }
     }
+
     .Header_Nav {
         padding: 24px;
     }
