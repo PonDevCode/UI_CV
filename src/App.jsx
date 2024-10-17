@@ -6,6 +6,8 @@ import SectionSkill from './components/Section/SectionSkill'
 import SectionEducation from './components/Section/SectionEducation'
 import SectionExperience from './components/Section/SectionExperience'
 import SectionProduct from './components/Section/SectionProduct'
+import SectionFeedBack from './components/Section/SectionFeedBack'
+
 
 
 
@@ -24,6 +26,7 @@ const App = () => {
         <SectionEducation />
         <SectionExperience />
         <SectionProduct />
+        <SectionFeedBack />
       </div>
       <div>
         <Footer />
