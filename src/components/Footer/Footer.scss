@@ -1,0 +1,27 @@
+
+.Footer_Container{
+    padding-bottom: 40px;
+    .Box_Footer {
+        width: 342px;
+        height: 78px;
+        border-radius: 60px;
+        margin: auto;
+        display: flex;
+        padding: 12px;
+        box-shadow: 0px 0px 67px #eae4e4, 0px 1px 0px #ffffff;
+        align-items: center;
+        justify-content: space-around;
+    
+        .Footer_Nav {
+            border-radius: 50%;
+            height: 54px;
+            width: 54px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.active{
+                background-color: #c0bfbf;
+            }
+        }
+    }
+}

@@ -6,14 +6,14 @@ import 'slick-carousel/slick/slick-theme.css';
 
 export default function SimpleSlider() {
   const settings = {
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
   };
 
   return (
-    <Slider {...settings}>
+    <Slider {...settings} className="box_1">
       <div>
         <h3>Product Design</h3>
       </div>

@@ -13,7 +13,7 @@ export default function SectionFeedBack() {
   };
   return (
     <div className='Box_FeedBack'>
-      <Slider {...settings}>
+      <Slider {...settings} className='box_2'>
         <div className='Item_FeedBack'>
           <div className='Info_FeedBack'>
             <div className='Info_Img_FeedBack'>
