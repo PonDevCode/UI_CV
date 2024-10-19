@@ -14,8 +14,8 @@ export default {
       container: {
         center: true,
         padding:{
-          DEFAULT : "1rem",
-          sm: "3rem",
+          DEFAULT : "0rem",
+          sm: "0rem",
         }
       } // mở rộng cấu hình container
       //Padding mặc định cho tất cả các kích thước màn hình là 1rem (16px)

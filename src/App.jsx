@@ -17,7 +17,7 @@ const App = () => {
   return (
 
     
-    <>
+    <div className='container'>
       <div className='Header_App'>
         <Header />
       </div>
@@ -31,7 +31,7 @@ const App = () => {
       <div>
         <Footer />
       </div>
-    </>
+    </div>
   )
 }
 
