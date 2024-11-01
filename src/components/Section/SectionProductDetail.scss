@@ -1,8 +1,16 @@
-
+@import '../media_queries';
 .Box_Product_Detail{
     padding-top: 24px;
     margin-bottom: 50px;
     .Product_Detail{
+        @include tablet {
+            width: 961px;
+          }
+        
+          @include mobile {
+           width: 100%;
+        
+          }
         width: 961px;
         box-shadow: 0px 0px 67px #eae4e4, 0px 1px 0px #ffffff;
         border-radius: 24px;

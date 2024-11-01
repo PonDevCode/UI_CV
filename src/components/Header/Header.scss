@@ -1,34 +1,48 @@
-.Header {
-    width: 961px;
-    height: 292px;
-    margin: auto;
-    border-radius: 24px;
-    background: white;
-    padding-top: 24px;
-    box-shadow: 0 0.3px 0.3px -0.6px rgba(47, 47, 106, 0.07), 0 1.1px 1.1px -1.3px rgba(47, 47, 106, 0.06), 0 5px 5px -1.9px rgba(47, 47, 106, 0.02);
-    margin-bottom: 24px;
+@import '../media_queries';
 
-    // height: 146px;
-    // align-self: stretch;
-    // flex-grow: 0;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: flex-start;
-    // align-items: flex-start;
-    // gap: 12px;
-    // padding: 12px 12px 2px;
-    // border-radius: 12px;
-    // box-shadow: 0 0.3px 0.3px -0.6px rgba(47, 47, 106, 0.07), 0 1.1px 1.1px -1.3px rgba(47, 47, 106, 0.06), 0 5px 5px -1.9px rgba(47, 47, 106, 0.02);
-    // background-color: #fff;
+
+.Header {
+    @include tablet {
+        width: 961px;
+        height: 292px;
+        margin: auto;
+        border-radius: 24px;
+        background: white;
+        padding-top: 24px;
+        box-shadow: 0 0.3px 0.3px -0.6px rgba(47, 47, 106, 0.07), 0 1.1px 1.1px -1.3px rgba(47, 47, 106, 0.06), 0 5px 5px -1.9px rgba(47, 47, 106, 0.02);
+        margin-bottom: 24px;
+    }
+
+    @include mobile {
+        box-shadow: 0 0.3px 0.3px -0.6px rgba(47, 47, 106, 0.07), 0 1.1px 1.1px -1.3px rgba(47, 47, 106, 0.06), 0 5px 5px -1.9px rgba(47, 47, 106, 0.02);
+        margin-bottom: 24px;
+        background-color: white;
+        border-radius: 24px;
+    }
 
     .Header_Box {
-        width: 913px;
-        height: 200px;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
+        @include tablet {
+            width: 913px;
+            // height: 292px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @include mobile {
+            display: block;
+            border-radius: 24px;
+            padding: 20px;
+        }
 
         .Header_Img {
+            @include mobile {
+                margin: auto;
+                height: 300px;
+                width: 300px;
+                margin-bottom: 20px;
+            }
+
             height: 200px;
             width: 200px;
 
@@ -40,7 +54,262 @@
         }
 
         .Header_Info {
-            width: 689px;
+            @include tablet {
+                width: 689px;
+                height: 200px;
+            }
+
+            @include mobile {}
+
+
+
+            .Info_Nav {
+                display: flex;
+                height: 32px;
+                justify-content: space-between;
+                margin-bottom: 24.2px;
+
+                @include mobile {
+                    display: block;
+
+                }
+
+                .Nav_Left {
+                    @include tablet {
+                        width: 261px;
+                        height: 32px;
+                        border-radius: 24px;
+                        font-size: 14px;
+                        background: #CFFCDF;
+                        text-align: center;
+                        line-height: 31px;
+                        color: #08782F;
+                    }
+
+                    @include mobile {
+
+                        height: 32px;
+                        border-radius: 24px;
+                        font-size: 12px;
+                        background: #CFFCDF;
+                        text-align: center;
+                        line-height: 31px;
+                        color: #08782F;
+
+                    }
+
+                }
+
+                .Nav_Right {
+                    display: flex;
+                    gap: 10px;
+                    text-align: center;
+
+                    @include mobile {
+                        margin-top: 10px;
+
+                    }
+
+                    .Icon_Nav {
+
+                        @include tablet {
+                            height: 32px;
+                            display: flex;
+                            align-items: center;
+                            width: 32px;
+                        }
+
+                        @include mobile {
+                            height: 32px;
+                            display: flex;
+                            align-items: center;
+                            width: 32px;
+                        }
+                    }
+                }
+            }
+
+            .Info_User {
+                @include tablet {
+                    height: 87.57px;
+                    margin-bottom: 24px;
+
+                }
+
+                @include mobile {}
+
+                .User_Name {
+                    font-size: 32px;
+                    font-weight: 600;
+
+                    @include mobile {
+                        padding-top: 20px;
+
+                    }
+                }
+
+                .User_Content {
+                    font-size: 16px;
+                    font-weight: 400;
+                    opacity: 0.7;
+                    display: -webkit-box;
+                    // -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    word-break: break-word;
+
+                    @include mobile {
+                        padding-bottom: 20px;
+
+                    }
+                }
+            }
+
+            .User_Adress {
+                @include tablet {
+                    height: 32px;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 14px;
+                }
+
+                @include mobile {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 14px;
+                }
+
+
+                .Adress {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    opacity: 0.7;
+                }
+
+                .Adress_Router {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                }
+
+                @include mobile {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .Adress {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        opacity: 0.7;
+                    }
+
+                    .Adress_Router {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                    }
+                }
+
+
+            }
+        }
+
+
+
+
+    }
+
+    .Header_Nav {
+        @include tablet {
+            margin-top: 20px;
+        }
+
+        @include mobile {
+            display: none;
+        }
+
+    }
+
+}
+
+/*
+.Header {
+
+    @include tablet {
+           
+        }
+    
+        @include mobile {
+         
+    
+        }
+    margin: auto;
+    border-radius: 24px;
+    background: white;
+    padding-top: 24px;
+    box-shadow: 0 0.3px 0.3px -0.6px rgba(47, 47, 106, 0.07), 0 1.1px 1.1px -1.3px rgba(47, 47, 106, 0.06), 0 5px 5px -1.9px rgba(47, 47, 106, 0.02);
+    margin-bottom: 24px;
+
+    @include tablet {
+        width: 961px;
+        height: 292px;
+    }
+
+    @include mobile {
+        box-shadow: 0 0.3px 0.3px -0.6px rgba(47, 47, 106, 0.07), 0 1.1px 1.1px -1.3px rgba(47, 47, 106, 0.06), 0 5px 5px -1.9px rgba(47, 47, 106, 0.02);
+        margin-bottom: 24px;
+
+    }
+
+    .Header_Box {
+        @include tablet {
+            width: 913px;
+            height: 292px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        @include mobile {
+            color: red;
+            display: block;
+            background-color: aqua;
+            padding-top: 20px;
+            border-radius: 24px;
+            padding: 20px;
+        }
+
+        .Header_Img {
+            @include mobile {
+                margin: auto;
+                height: 300px;
+                width: 300px;
+                margin-bottom: 20px;
+            }
+
+            height: 200px;
+            width: 200px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 12px;
+            }
+        }
+
+        .Header_Info {
+            @include tablet {
+                width: 689px;
+            }
+            @include mobile {
+                        
+              
+
+            }
             height: 200px;
 
             .Info_Nav {
@@ -49,16 +318,33 @@
                 justify-content: space-between;
                 margin-bottom: 24.2px;
 
-                .Nav_Left {
-                    width: 261px;
-                    height: 32px;
-                    border-radius: 24px;
-                    font-size: 14px;
-                    background: #CFFCDF;
-                    text-align: center;
-                    line-height: 31px;
-                    color: #08782F;
+                @include mobile {
+                    display: block;
+                }
 
+                .Nav_Left {
+                    @include tablet {
+                        width: 261px;
+                        height: 32px;
+                        border-radius: 24px;
+                        font-size: 14px;
+                        background: #CFFCDF;
+                        text-align: center;
+                        line-height: 31px;
+                        color: #08782F;
+                    }
+
+                    @include mobile {
+                        
+                        height: 32px;
+                        border-radius: 24px;
+                        font-size: 12px;
+                        background: #CFFCDF;
+                        text-align: center;
+                        line-height: 31px;
+                        color: #08782F;
+
+                    }
 
                 }
 
@@ -68,9 +354,20 @@
                     text-align: center;
 
                     .Icon_Nav {
-                        height: 32px;
-                        line-height: 32px;
-                        width: 32px;
+
+                        @include tablet {
+                            height: 32px;
+                            display: flex;
+                            align-items: center;
+                            width: 32px;
+                        }
+
+                        @include mobile {
+                            height: 32px;
+                            display: flex;
+                            align-items: center;
+                            width: 32px;
+                        }
                     }
                 }
             }
@@ -114,11 +411,8 @@
                     display: flex;
                     align-items: center;
                     gap: 5px;
-
                 }
             }
-
-
         }
     }
 
@@ -126,6 +420,6 @@
         padding-left: 24px;
         padding-top: 24px;
         padding-right: 24px;
-
     }
 }
+*/

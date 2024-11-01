@@ -1,6 +1,13 @@
+@import '../media_queries';
 .Box_Experience {
     height: 408px;
-    width: 961px;
+    @include tablet {
+        width: 961px;
+    }
+
+    @include mobile {
+        
+    }
     padding: 24px;
     background-color: #ffffff;
     border-radius: 24px;
